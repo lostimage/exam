@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Exam</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+			//=include templates/mob-nav.html				
+		</div>
+		<!-- ./off-canvas -->
+		<div class="off-canvas-content" data-off-canvas-content>
+ 
+			//=include templates/header.html
+
+			<main>
+				//=include templates/about-us.html
+				//=include templates/recent-works.html
+				//=include templates/our-team.html
+			
+				<section id="contact" class="ba-get-touch">
+						<div class="ba-map" id="map"></div>
+						<form method="post" class="ba-get-touch-form">
+							<input type="text" placeholder="your name" required>
+							<input type="email" placeholder="your email" required>
+							<textarea  cols="30" rows="10" placeholder="your message"></textarea>
+							<button class="ba-button ba-button--send" type="submit">send message</button>
+						</form>
+						<div class="ba-get-touch__logo">   
+							<img src="assets/img/marker1.png" alt="works">
+							<h2 class="ba-get-touch__title">RECENT WORKS</h2>
+						</div>
+						<address class="ba-get-touch-address">
+							<div class="ba-get-touch-address__img">
+								<img src="assets/img/address.png" alt="address">
+							</div>
+						
+									<p>
+											Ikan Piranha Atas 220C 
+											Malang - East Java
+											Indonesia
+									</p>
+							
+						</address>
+						<address class="ba-get-touch-address ba-get-touch-address--phone">
+							<div class="ba-get-touch-address__img">
+									<img src="assets/img/phone.png" alt="address">
+							</div>
+						
+									<p>
+											Ikan Piranha Atas 220C 
+											Malang - East Java
+											Indonesia
+									</p>
+						
+							
+							</address>
+						
+						<a href="#home" class="ba-button-up">
+							<img src="assets/img/arrowtop.svg" alt="arrow">
+						</a>
+					
+				</section>
+			</main>
+	
+			//=include templates/footer.html
+		
+		</div>
+		<!-- ./off-canvas-content -->
+	</div>
+	<!-- ./off-canvas-wrapper -->
+	//=include templates/scripts.html
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDW00wd4VXgnZBcUrO4fmO0oXp0kVHK6g"
+	async defer></script>
+</body>
+</html>

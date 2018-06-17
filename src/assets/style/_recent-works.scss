@@ -1,0 +1,70 @@
+.ba-works {
+    background: url('../img/bgrecent.jpg') no-repeat 50%;
+    background-size: cover;
+    padding:48px 0 60px;
+    text-align:center;
+    &__title {
+        color: $white;
+        margin: 36px 0 64px;
+    }
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 310px;
+        display:flex;
+        list-style: none;
+        justify-content: center;
+        font-size: 0;
+     
+        margin: 0;
+      
+        & li {
+        width: 10px;
+        height: 10px;
+        background: transparent;
+       
+        border:2px solid $white;
+        margin-right: 19px;
+        border-radius:50%;
+        transition: transform .3s ease-in;
+            &.slick-active {
+                background: $white;
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
+
+.ba-works-slider-wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 730px;
+}
+.ba-works-slider {
+   width: 100%;
+   margin-bottom: 105px;
+   &__item {
+       img {
+           display: block;
+           width: 100%;
+       }
+   }
+}
+.ba-works-prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    & svg {
+        fill:$white;
+        }
+}
+.ba-works-next-arrow {
+    position: absolute;
+    top: 50%;
+   left: 130%;
+   & svg {
+    fill:$white;
+    }
+}

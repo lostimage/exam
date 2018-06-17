@@ -1,0 +1,60 @@
+.ba-container--large {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding:0 15px;
+}
+svg{
+	display: inline-block;
+	vertical-align: middle;
+	@include ba-transition('fill, stroke');
+}
+a,
+[type="submit"],
+[type="button"],
+button{
+	@include ba-transition;
+}
+.ba-button{
+	display: inline-block;
+	line-height: 50px;
+	border:1px solid #7d7a7c;
+	color:  #7d7a7c;
+	font-size: 20px;
+	font-style: italic;
+	padding:0 50px;
+	&--learn-more {
+		border:1px solid #7d7a7c;
+	margin: 90px auto 0 ;
+	}
+	&--gallery {
+		margin: 0;
+		color: $white;
+		border:1px solid $white;
+	}
+	&--send {
+		margin: 50px auto 0;
+		background: $theme-color;
+		border:none;
+		color:$white;
+		text-transform: uppercase;
+		font-style: normal;
+	}
+}
+.ba-map {
+	height: 900px;
+}
+.ba-button-up {
+	position: absolute;
+	bottom: 47px;
+	right: 10%;
+	background-color: rgba($theme-color, 0.5);
+	z-index: 3;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a:hover  {
+	opacity: 0.8;
+}

@@ -1,0 +1,12 @@
+.ba-footer {
+    background: $theme-color;
+    padding:66px 0;
+    
+}
+.ba-footer-socials {
+    display: flex;
+    background: $theme-color;
+    .ba-socials__item {
+        background: $light-gray;
+    }
+}
